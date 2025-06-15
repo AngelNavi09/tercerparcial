@@ -1,14 +1,32 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/tercerparcial/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-    <script type="module" crossorigin src="/tercerparcial/assets/index-BhkvL7Ww.js"></script>
-    <link rel="stylesheet" crossorigin href="/tercerparcial/assets/index-DTMmt7_j.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#dc3545">
+  <link rel="icon" href="/tercerparcial/favicon.ico">
+  <title>Academia de Baile "Sergio el Bailador"</title>
+  <!-- Preload para mejor performance -->
+  <link rel="preload" href="/tercerparcial/assets/fonts/*" as="font" type="font/woff2" crossorigin>
+  <script>
+    // Detección de dispositivos móviles
+    if(/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+      document.documentElement.classList.add('mobile-device');
+    }
+  </script>
+  <script type="module" crossorigin src="/tercerparcial/assets/main-C0CBq5nf.js"></script>
+  <link rel="stylesheet" crossorigin href="/tercerparcial/assets/main-DTMmt7_j.css">
+</head>
+<body>
+  <div id="root"></div>
+  <!-- Script para manejar recargas en iOS -->
+  <script>
+    if(/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+      window.addEventListener('orientationchange', function() {
+        window.location.reload();
+      });
+    }
+  </script>
+</body>
 </html>
