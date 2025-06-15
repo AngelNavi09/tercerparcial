@@ -2,31 +2,21 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="theme-color" content="#dc3545">
-  <link rel="icon" href="/tercerparcial/favicon.ico">
-  <title>Academia de Baile "Sergio el Bailador"</title>
-  <!-- Preload para mejor performance -->
-  <link rel="preload" href="/tercerparcial/assets/fonts/*" as="font" type="font/woff2" crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academia de Baile</title>
+  <!-- Precarga de estilos críticos -->
+  <link rel="preload" href="/tercerparcial/src/main.css" as="style">
   <script>
-    // Detección de dispositivos móviles
-    if(/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-      document.documentElement.classList.add('mobile-device');
+    // Solución para pantalla blanca en móviles
+    if (/Android|iPhone|iPad/i.test(navigator.userAgent)) {
+      document.write('<script src="/tercerparcial/src/main.jsx" type="module"><\/script>');
     }
   </script>
-  <script type="module" crossorigin src="/tercerparcial/assets/main-C0CBq5nf.js"></script>
-  <link rel="stylesheet" crossorigin href="/tercerparcial/assets/main-DTMmt7_j.css">
+  <script type="module" crossorigin src="/tercerparcial/assets/main.DhqePpIF.js"></script>
+  <link rel="stylesheet" crossorigin href="/tercerparcial/assets/main.DTMmt7_j.css">
 </head>
 <body>
   <div id="root"></div>
-  <!-- Script para manejar recargas en iOS -->
-  <script>
-    if(/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-      window.addEventListener('orientationchange', function() {
-        window.location.reload();
-      });
-    }
-  </script>
+  <!-- Carga normal para desktop -->
 </body>
 </html>

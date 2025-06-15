@@ -2,16 +2,14 @@
 <html>
 <head>
   <script>
-    // Redirección inteligente para GitHub Pages
-    const path = window.location.pathname;
-    if(path.includes('tercerparcial')) {
-      window.location.href = '/tercerparcial/#' + path.split('tercerparcial')[1];
-    } else {
+    if (window.location.pathname.includes('tercerparcial')) {
       window.location.href = '/tercerparcial/#/';
+    } else {
+      window.location.href = '/tercerparcial/';
     }
   </script>
 </head>
 <body>
-  <p>Redireccionando...</p>
+  <p>Redireccionando a la página principal...</p>
 </body>
 </html>
